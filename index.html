@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libras - Laryssa Garufe</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&display=swap" rel="stylesheet">
+<style>
+:root {
+    --azul-claro: #4da6ff;
+    --azul-escuro: #0059b3;
+    --cinza: #f9f9f9;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cinza);
+    margin:0;
+}
+header {
+    background-color:white;
+    padding:1rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+header img {
+    width:100px;
+}
+.nav-link {
+    color: var(--azul-escuro);
+    font-weight:600;
+    margin-left:1rem;
+}
+#inicio {
+    position: relative;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/88/LIBRAS.jpg') center/cover no-repeat;
+    height: 450px;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1100px;
+    color:white;
+}
+#inicio .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,89,179,0.5);
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:3rem;
+}
+#inicio h1 {
+    font-family:'Lemon', cursive;
+    font-size:2.5rem;
+}
+#inicio p {
+    font-size:1.1rem;
+    margin-top:0.5rem;
+}
+#inicio .btn-inicio {
+    margin-top:1rem;
+    background-color: var(--azul-claro);
+    border:none;
+    padding:0.6rem 1.5rem;
+    border-radius:50px;
+    font-weight:bold;
+    color:white;
+}
+#sobre {
+    max-width:1000px;
+    margin:3rem auto;
+    padding:0 1rem;
+}
+#sobre h2 {
+    font-family:'Lemon', cursive;
+    font-size:2rem;
+    color: var(--azul-escuro);
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+#sobre p {
+    font-size:1rem;
+    line-height:1.5;
+    text-align:center;
+}
+#sobre img {
+    display:block;
+    margin:2rem auto;
+    border-radius:15px;
+    width:80%;
+}
+#galeria {
+    background-color:#e6f0ff;
+    padding:3rem 1rem;
+    text-align:center;
+}
+#galeria h2 {
+    font-family:'Lemon', cursive;
+    color: var(--azul-escuro);
+    margin-bottom:2rem;
+}
+#galeria img {
+    width:300px;
+    max-width:90%;
+    border-radius:15px;
+    margin:1rem;
+}
+#contato {
+    max-width:700px;
+    margin:3rem auto;
+    padding:2rem;
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+#contato h2 {
+    text-align:center;
+    color: var(--azul-escuro);
+    margin-bottom:1.5rem;
+}
+#contato .form-control {
+    margin-bottom:1rem;
+    border-radius:8px;
+}
+#contato button {
+    width:100%;
+    border-radius:50px;
+    background-color: var(--azul-claro);
+    border:none;
+    font-weight:bold;
+    color:white;
+    padding:0.6rem;
+}
+footer {
+    background-color: var(--azul-escuro);
+    color:white;
+    text-align:center;
+    padding:2rem 0;
+}
+footer i {
+    margin:0 0.5rem;
+    font-size:1.5rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hand_sign_icon.png" alt="Logo Libras">
+    <ul class="d-flex list-unstyled mb-0">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+</header>
+
+<section id="inicio">
+    <div class="overlay">
+        <h1>Libras e Inclusão</h1>
+        <p>Promovendo acessibilidade através da Língua Brasileira de Sinais.</p>
+        <a href="#sobre" class="btn-inicio">Saiba Mais</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2>O que é Libras?</h2>
+    <p>A Língua Brasileira de Sinais é a principal forma de comunicação da comunidade surda. Aprender Libras é fundamental para a inclusão e para criar ambientes acessíveis em escolas, trabalho e sociedade.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Libras_classroom.jpg" alt="Aula de Libras">
+</section>
+
+<section id="galeria">
+    <h2>Galeria</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Libras_signs.jpg" alt="Sinais Libras">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Libras_Hand.jpg" alt="Mãos Libras">
+</section>
+
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+        <input type="text" class="form-control" placeholder="Seu nome">
+        <input type="email" class="form-control" placeholder="Seu e-mail">
+        <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Desenvolvido por Laryssa Garufe — Libras</p>
+    <div>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+    </div>
+</footer>
+
+</body>
+</html>
